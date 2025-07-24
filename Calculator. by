@@ -1,0 +1,33 @@
+🔁 آلة حاسبة تشتغل كذا مرة – نسخة أمنية المحترفة 💙
+
+while True:
+    num1 = float(input('Enter first number: '))
+    oper = input("Choose an operation (+, -, *, /): ")
+    num2 = float(input("Enter second number: "))
+
+    if oper == "+":
+        result = num1 + num2
+        print("Result:", result)
+
+    elif oper == "-":
+        result = num1 - num2
+        print("Result:", result)
+
+    elif oper == "*":
+        result = num1 * num2
+        print("Result:", result)
+
+    elif oper == "/":
+        if num2 != 0:
+            result = num1 / num2
+            print("Result:", result)
+        else:
+            print("⚠️ Can't divide by zero.")
+
+    else:
+        print("⚠️ Invalid operation:", oper)
+
+    # 🧠 نسأل المستخدم: هل تحب تكمّل ولا تخرج؟
+    choice = input("\nDo you want to try again? (yes/no): ").lower()
+    if choice != "yes":
+        print("Thank you for using Omnia's calculator 💙")
